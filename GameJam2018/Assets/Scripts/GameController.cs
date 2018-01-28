@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
     public Transform Ship;
     public Transform Walls;
     public Transform Waves;
+    public Transform Spawn;
 
     public int Points;
     public Text Score;
@@ -18,6 +19,7 @@ public class GameController : MonoBehaviour {
         Instantiate(Ship, Ship.transform.position, Ship.transform.rotation);
         Instantiate(Walls, Walls.transform.position, Walls.transform.rotation);
         Instantiate(Waves, Waves.transform.position, Waves.transform.rotation);
+        Instantiate(Spawn, Spawn.transform.position, Spawn.transform.rotation);
     }
 	
 	// Update is called once per frame
