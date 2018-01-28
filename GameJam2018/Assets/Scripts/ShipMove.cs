@@ -14,7 +14,8 @@ public class ShipMove : MonoBehaviour
     private SpriteRenderer Ship;
     private int count = 0;
     // Use this for initialization
-    void Start()
+         
+void Start()
     {
         canMoveUp = true;
         canMoveDown = true;
@@ -75,6 +76,7 @@ public class ShipMove : MonoBehaviour
       
         if (count < 6)
         {
+            
             Ship.enabled = !Ship.enabled;
         }
         else
@@ -85,4 +87,7 @@ public class ShipMove : MonoBehaviour
         }
         count++;
     }
+
+    
+
 }
